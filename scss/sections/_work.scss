@@ -1,0 +1,294 @@
+.work{
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: -5px;
+    &_left{
+        width: 560px;
+        h1{
+            padding-top: 30px;
+            color: $base-black;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: -0.96px;
+        }
+        p{
+            padding-top: 20px;
+            color: $base-black;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 160%; /* 25.6px */
+        }
+        &_bottom{
+            padding-top: 30px;
+            display: flex;
+            align-items: center;
+            text-align: start;
+            column-gap: 40px;
+            row-gap: 10px;
+            &-left{
+                h1{
+                    color: $green;
+                    font-size: 28px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+                p{
+                    padding-top: 10px;
+                    color: $base-black;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+            &-middle{
+                h1{
+                    color: $green;
+                    font-size: 28px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+                p{
+                    padding-top: 10px;
+                    color: $base-black;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+            &-right{
+                h1{
+                    color: $green;
+                    font-size: 28px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+                p{
+                    padding-top: 10px;
+                    color: $base-black;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+        }
+    }
+   
+    &_bottom{
+        width: 1140px;
+        height: 200px;
+        flex-shrink: 0;
+        border-radius: 20px;
+        background: $green;
+        display: flex;
+        &-left{
+            gap: 10px;
+            margin-top: 60px;
+            margin-bottom:  60px;
+            margin-left:60px;
+            margin-right: 169px;
+            h1{
+            width: 340px;
+            display: flex;
+            color:$secondary-color;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            }
+            strong{
+                width: 340px;
+                color:$secondary-color;
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: -1.26px;
+            }
+        }
+        &-right{
+           margin-top: 31px; 
+           margin-right: 57px;
+           h3{
+            margin-bottom: 16px;
+            color:$secondary-color;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+           }
+           &_btn{
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 22px;
+            &-left{
+                display: flex;
+                width: 249px;
+                padding: 7px 16px 8px 16px;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                gap: 3px;
+                border-radius: 10px;
+                background: $secondary-color;
+                p{
+                    color: $gray-medium;
+                    text-align: center;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+                span{
+                    color: $base-black;
+                    text-align: center;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+            &-right{
+                display: flex;
+                padding: 16px 36px 18px 36px;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                border-radius: 10px;
+                border: 1px solid $secondary-color;
+                color:$secondary-color;
+                text-align: center;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+           
+           }
+           &_span{
+            
+            color:rgba(255, 255, 255, 0.50);
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+        }
+    }
+}
+
+
+@media only screen and (max-width:400px){
+    .work{
+        margin-top: 40px;
+        width: 100%;
+        padding: 50px !important;
+        margin: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &_left{
+            width: 390px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            h1{
+                color: $base-black;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: -0.6px;
+            }
+            p{
+                width: 100%;
+                color: $base-black;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                max-width: 351px;
+            }
+            &_bottom{
+                padding-top: 30px;
+                display: flex;
+                align-items: center;
+                text-align: start;
+                column-gap: 40px;
+                row-gap: 10px;
+                &-left{
+                    h1{
+                        color: $green;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                    }
+                    p{
+                        padding-top: 10px;
+                        color: $base-black;
+                        font-size: 10px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        max-width: 351px;
+                    }
+                }
+                &-middle{
+                    h1{
+                        color: $green;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                    }
+                    p{
+                        padding-top: 10px;
+                        color: $base-black;
+                        font-size: 10px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        max-width: 351px;
+                    }
+                }
+                &-right{
+                    h1{
+                        color: $green;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                    }
+                    p{
+                        padding-top: 10px;
+                        color: $base-black;
+                        font-size: 10px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        max-width: 351px;
+                    }
+                }
+            }
+        }
+       &_rigth{
+        .imgsss{
+            width: 300px !important;
+        }
+       }    
+        &_bottom{
+           display: none;
+        }
+    }
+}

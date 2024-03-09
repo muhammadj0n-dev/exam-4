@@ -1,0 +1,44 @@
+.seo{
+    
+    &_top{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        h1{
+            color: $base-black;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: -0.96px;
+        }
+        p{
+            color: $base-black;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 160%; /* 25.6px */
+        }
+    }
+    &_bottom{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    padding: 16px 36px 18px 36px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    background: #E0ECE9;
+    h4{
+        color: #33836E;
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+    }
+
+}

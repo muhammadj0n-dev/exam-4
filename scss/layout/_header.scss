@@ -1,0 +1,230 @@
+header {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 20;
+  .responsiv{
+    display: none;
+  }
+  .togle{
+    transform: translateX(0) !important;
+    transition: all 0.3s linear;
+}
+  .navbar {
+    padding-top: 40px;
+    .toggle_menu{
+      display: none;
+      a{
+        display: none;
+      }
+    }
+    &_list {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      margin-bottom: 30px;
+      &-menu{
+        display: none;
+      }
+      &-input {
+        display: flex;
+        width: 447px;
+        padding: 14px 20px;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        input {
+          width: 100%;
+          outline: none;
+          border: none;
+        }
+      }
+      &-search {
+        width: 220px;
+        display: flex;
+        height: 52px;
+        padding: 10px 20px;
+        align-items: center;
+        gap: 10px;
+        border-radius: 10px;
+        background: $btn-color;
+        color: $secondary-color;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+    &-contact {
+      width: 220px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      strong {
+        color: $base-black;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+      p {
+        color: $gray-medium;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+    &-bottom_list {
+      display: flex;
+      width: 1140px;
+      justify-content: space-between;
+      align-items: center;
+      &-messenger {
+        display: flex;
+        align-items: flex-start;
+        gap: 15px;
+        &_left {
+          display: flex;
+          padding: 10px 20px;
+          align-items: center;
+          gap: 10px;
+          border-radius: 10px;
+          border: 1px solid var(--Gray-Borders, rgba(47, 43, 67, 0.15));
+          color: $base-black;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+
+        &_right {
+          display: flex;
+          padding: 10px 20px;
+          align-items: center;
+          gap: 10px;
+          border-radius: 10px;
+          border: 1px solid var(--Gray-Borders, rgba(47, 43, 67, 0.15));
+          color: $base-black;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+        :hover {
+          border-radius: 5px;
+          background: #81d2bc;
+        }
+      }
+      &-contact {
+        display: flex;
+        align-items: flex-start;
+        gap: 30px;
+        &_item-link {
+          color: $base-black;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+      }
+      &_user {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: $base-black;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+    
+  }
+}
+
+@media only screen and (max-width:400px){
+  header {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 20;
+    .navbar {
+      padding-top: 40px;
+      margin: 0 auto;
+      .responsiv{
+        position: relative;
+        padding: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between  ;
+    
+        i{
+            font-size: 30px;
+            cursor: pointer;
+            color:$base-black;
+        }
+
+        div{
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            i{
+                font-size: 25px;
+                color:$base-black;
+            }
+        }
+
+        .togle_menu{
+            position: relative;
+            left: 0; 
+            height: 100vh;
+            width: 100%;
+            background: white;
+            z-index: 999;
+            position: absolute;
+            top: 0px;
+            transition: all 0.3s linear;
+            transform: translateX(-100%);
+
+            #close_btn{
+                position: absolute;
+                right: 20px;
+                top: 25px
+            }
+
+            li{
+                padding: 15px;
+                a{
+                    color: black;
+                    font-weight: 600;
+                    font-size: 28px;
+                }
+
+                button{
+                    padding: 10px;
+                    border-radius: 10px;
+                    border: none;
+                    a{
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+                       
+                        color: #140A32;
+                        border-radius: 10px;
+                        background: #33836E;
+                    }
+                }
+            }
+        }
+    }
+      &_list {
+        display: none;
+      }
+      &-bottom_list {
+          display: none;
+      }
+
+    }
+  }
+}

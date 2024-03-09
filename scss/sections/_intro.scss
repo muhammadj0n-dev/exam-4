@@ -1,0 +1,193 @@
+.intro{
+    margin-top: 101px;
+    
+    &_top{
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-bottom:80px;
+        gap: 20px;
+        h1{
+            color:$base-black;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: -0.96px;
+        }
+        p{
+            color: $base-black;
+            font-family: "Open Sans";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 160%; /* 25.6px */
+        }
+    }
+    &_bottom{
+        &_title{
+            gap: 15px;
+            h1{
+                color: $base-black;
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: -0.96px;
+            }
+            p{
+                color: $base-black;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 160%; /* 25.6px */
+            }
+        }
+        &-cards{
+            display: flex;
+            padding-top: 30px;
+            align-items: flex-start;
+            gap: 30px;
+            &_card{
+                display: flex;
+                padding: 20px;
+                width: 207px;
+                height: 180px;
+                flex-direction: column;
+                justify-content: center;
+                align-items:center;
+                gap: 15px;
+                border-radius: 20px;
+                border: 1px solid $gray-medium;
+                &_body{
+                    display: flex;
+                    height: 83px;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
+                    gap: 15px;
+                    p{
+                        color: $base-black;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+                    strong{
+                        color: $base-black;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                    }
+                }
+                a{
+                    color:  $green ;
+                    text-align: center;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                }
+            }
+        }
+        }
+}
+
+@media only screen and (max-width:400px){
+    .intro{
+        margin-top: 101px;
+        
+        &_top{
+            display: inline-flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding-bottom:80px;
+            gap: 20px;
+            h1{
+                color: $base-black;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+
+            }
+            p{
+                color: $base-black;
+                font-family: "Open Sans";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 160%; /* 25.6px */
+            }
+        }
+        &_bottom{
+            &_title{
+                gap: 15px;
+                h1{
+                    color: $base-black;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    letter-spacing: -0.6px;
+                }
+                p{
+                    color: $base-black;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 160%; /* 25.6px */
+                }
+            }
+            &-cards{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                padding-top: 30px;
+                align-items: flex-start;
+                gap: 15px;
+                &_card{
+                    display: flex;
+                    padding: 20px;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
+                    gap: 15px;
+                    flex: 1 0 0;
+                    &_body{
+                        display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
+                    gap: 15px;
+                    align-self: stretch;
+                        p{
+                            color: $base-black;
+                            color:$base-black;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                        }
+                        strong{
+                            color: $base-black;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: normal;
+                        }
+                    }
+                    a{
+                        color: $green;
+                        text-align: center;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                    }
+                }
+            }
+            }
+    }  
+}

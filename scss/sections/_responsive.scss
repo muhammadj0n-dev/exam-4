@@ -1,0 +1,10 @@
+.responsive{
+    display: none;
+}
+
+@media only screen and (max-width:400px){
+    .responsive{
+        margin-top: 40px !important;
+        display: block;
+    }
+}

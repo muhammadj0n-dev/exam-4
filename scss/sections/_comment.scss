@@ -1,0 +1,181 @@
+.comment{
+margin-top: 80px;
+h1{
+    color: $base-black;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.96px;
+}
+.cards{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    padding: 50px;
+}
+.card{
+    width: 340px;
+    border-radius: 20px;
+    border: 1px solid var(--Gray-Borders, rgba(47, 43, 67, 0.15));
+}
+    .card_body{
+        // width: 367px;
+        height: 421px;
+        display: flex;
+        padding: 30px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-shrink: 0;
+        
+    &_top{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+        align-self: stretch;
+        &-list{
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            &_item{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 5px;
+                h5{
+                    color: $base-black;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                }
+                p{
+                    color: $gray-medium;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+        }
+        p{
+            color: $base-black;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 160%; /* 25.6px */
+        }
+    }
+    &_bottom{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        align-self: stretch;
+        p{
+            color: $gray-medium;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        span{
+            color: $green;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 150%; /* 24px */
+        }
+    }
+}
+@media only screen and (max-width:400px){
+    .cards{
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        padding: 50px;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 353px;
+    }
+    .card{
+        width: 360px !important;
+        height: 400px !important;
+        border-radius: 20px;
+        border: 1px solid var(--Gray-Borders, rgba(47, 43, 67, 0.15));
+    }
+        .card_body{
+            // width: 367px;
+            height: 421px;
+            display: flex;
+            padding: 30px;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-shrink: 0;
+        &_top{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 24px;
+            align-self: stretch;
+            &-list{
+                display: flex;
+                align-items: flex-start;
+                gap: 15px;
+                &_item{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 5px;
+                    h5{
+                        color: $base-black;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                    }
+                    p{
+                        color: $gray-medium;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+                }
+            }
+            p{
+                color: $base-black;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 160%; /* 25.6px */
+            }
+        }
+        &_bottom{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 12px;
+            align-self: stretch;
+            p{
+                color: $gray-medium;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+            span{
+                color: $green;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 150%; /* 24px */
+            }
+        }
+    }
+}
+}
